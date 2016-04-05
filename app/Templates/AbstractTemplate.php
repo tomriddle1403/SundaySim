@@ -8,7 +8,7 @@ abstract class AbstractTemplate
 {
 	protected $view;
 
-	abstract oublic function prepare(View $view, array $parameters);
+	abstract public function prepare(View $view, array $parameters);
 
 	public function getView()
 	{

@@ -17,7 +17,7 @@
 
 	<div class="form-group">
 		{!! Form::label('slug') !!}
-		{!! Form::text('slug', null, ['class' => 'form-control'])!!}
+		{!! Form::text('slug',  null, ['class' => 'form-control'])!!}
 
 	</div>
 
@@ -61,11 +61,11 @@
 			format: 'YYYY-MM-DD HH:mm:ss',
 			showClear: true,
 			defaultDate: '{{ old('published_at', $post->published_at) }}'
-		});
+			});
 
 		$('input[name=title]').on('blur', function(){
 			var slugElement = $('input[name=slug]');
-
+            
 			if(slugElement.val()){
 				return;
 			}

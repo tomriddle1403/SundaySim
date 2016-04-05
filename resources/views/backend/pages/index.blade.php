@@ -11,6 +11,7 @@
 				<td>URI</td>
 				<td>Name</td>
 				<td>Template</td>
+				<td>Hidden From Navigation</td>
 				<td>Edit</td>
 				<td>Delete</td>
 			</tr>
@@ -31,6 +32,7 @@
 						<td> <a href="{{ url( $page->uri ) }}">{{ $page->pretty_uri }} </a> </td>
 						<td>{{ $page->name or 'None' }}</td>
 						<td>{{ $page->template or 'None' }}</td>
+						<td class="">{{ $page->hidden ? "Yes" : "No" }}</td>
 						<td>
 							<a href="{{ route('backend.pages.edit', $page->id) }}">
 								<span class="glyphicon glyphicon-edit"></span>

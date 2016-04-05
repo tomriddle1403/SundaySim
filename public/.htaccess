@@ -5,7 +5,7 @@
 
     RewriteEngine On
 
-    RewriteBase /sundaysim/public
+    RewriteBase /SundaySim/public
 
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
